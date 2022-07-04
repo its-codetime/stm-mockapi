@@ -1,0 +1,32 @@
+Student-Teacher management
+
+- crud ops for teachers and students
+- uses mock api for data
+- uses material ui components
+- Routes
+  - /student - Student.js
+  - /teacher - Teacher.js
+  - nested routes
+    - /all - TableDisplay.js
+      - displays a table
+    - /add - AddForm.js
+      - add new resource
+    - /edit/:id - EditForm.js
+      - edit resource
+    - /delete/:id - DeleteForm.js
+      - delete resource
+- components
+  - Nav.js
+    - contains nav links
+  - TableDisplay.js
+    - displays table list for both students and teachers with actions
+  - InputForm.js
+    - common form for the following components
+      - AddForm.js
+      - EditForm.js
+  - DeleteForm.js
+    - delete form for both students and teachers
+- hooks
+  - useResource
+    - handles fetching resource and resource crud ops
+    - fetches resource based on type (student or teacher)
